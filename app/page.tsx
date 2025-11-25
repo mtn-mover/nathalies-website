@@ -59,10 +59,23 @@ export default function Home() {
           </h2>
 
           <div className="prose prose-lg max-w-none">
-            <p className="text-xl text-brown-light leading-relaxed mb-8 text-center">
+            <p className="text-xl text-brown-light leading-relaxed mb-12 text-center">
               Ich begleite Menschen, Teams und Organisationen in Entwicklungs- und Veränderungsprozessen.
               Dazu biete ich einen geschützten Raum für Reflexion und Entwicklung.
             </p>
+
+            {/* Profile Image */}
+            <div className="mb-16 flex justify-center">
+              <div className="relative w-full max-w-2xl rounded-2xl overflow-hidden shadow-lg">
+                <Image
+                  src="/images/nathalie1.png"
+                  alt="Nathalie Stocker in einem Coaching-Gespräch"
+                  width={800}
+                  height={533}
+                  className="w-full h-auto"
+                />
+              </div>
+            </div>
 
             <div className="mt-16 grid md:grid-cols-2 gap-8">
               <div className="bg-white p-8 rounded-lg shadow-sm">
