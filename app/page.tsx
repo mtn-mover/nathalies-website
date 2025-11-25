@@ -385,32 +385,42 @@ export default function Home() {
 
             <div>
               <h3 className="font-serif text-xl mb-2">Telefon</h3>
-              <a href="tel:+41775111249" className="text-copper hover:text-beige transition-colors">
+              <button
+                onClick={() => window.location.href = 'tel:' + ['+41', '77', '511', '12', '49'].join('')}
+                className="text-copper hover:text-beige transition-colors cursor-pointer"
+              >
                 +41 77 511 12 49
-              </a>
+              </button>
             </div>
 
             <div>
               <h3 className="font-serif text-xl mb-2">E-Mail</h3>
-              <a href="mailto:n.stocker@gmx.net" className="text-copper hover:text-beige transition-colors">
-                n.stocker@gmx.net
-              </a>
+              <button
+                onClick={() => window.location.href = ['mail', 'to:', 'n.', 'stocker', '@', 'gmx', '.net'].join('')}
+                className="text-copper hover:text-beige transition-colors cursor-pointer"
+              >
+                {'n.stocker'}
+                <span style={{ display: 'none' }}>REMOVE</span>
+                {'@'}
+                <span style={{ display: 'none' }}>SPAM</span>
+                {'gmx.net'}
+              </button>
             </div>
           </div>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-              href="tel:+41775111249"
-              className="inline-block px-8 py-4 bg-copper text-beige rounded-full hover:bg-beige hover:text-brown transition-colors duration-300 font-medium"
+            <button
+              onClick={() => window.location.href = 'tel:' + ['+41', '77', '511', '12', '49'].join('')}
+              className="inline-block px-8 py-4 bg-copper text-beige rounded-full hover:bg-beige hover:text-brown transition-colors duration-300 font-medium cursor-pointer"
             >
               Anrufen
-            </a>
-            <a
-              href="mailto:n.stocker@gmx.net"
-              className="inline-block px-8 py-4 bg-transparent border-2 border-copper text-copper rounded-full hover:bg-copper hover:text-beige transition-colors duration-300 font-medium"
+            </button>
+            <button
+              onClick={() => window.location.href = ['mail', 'to:', 'n.', 'stocker', '@', 'gmx', '.net'].join('')}
+              className="inline-block px-8 py-4 bg-transparent border-2 border-copper text-copper rounded-full hover:bg-copper hover:text-beige transition-colors duration-300 font-medium cursor-pointer"
             >
               E-Mail schreiben
-            </a>
+            </button>
           </div>
         </div>
       </section>
