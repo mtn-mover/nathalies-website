@@ -7,10 +7,17 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        beige: '#F5F0E8',
-        copper: '#B8956C',
-        brown: '#4A2C2A',
-        'brown-light': '#6B4A47',
+        sand: {
+          DEFAULT: '#D4C5B9',
+          light: '#E8DDD3',
+        },
+        gray: {
+          50: '#F5F5F5',
+          100: '#E5E5E5',
+          200: '#CCCCCC',
+          500: '#666666',
+          900: '#1A1A1A',
+        },
       },
       fontFamily: {
         serif: ['Playfair Display', 'serif'],
